@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Study</string>
+    <string name="my_progress_bar">My Progress Bar</string>
+    <string name="title_activity_my_progress_bar">MyProgressBar</string>
 </resources>
