@@ -10,4 +10,9 @@
     android:layout_height="wrap_content"
     android:text="@string/my_progress_bar"
     android:onClick="openMyProgressBar"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_text_clock"
+        android:onClick="openMyTextClock"/>
 </LinearLayout>

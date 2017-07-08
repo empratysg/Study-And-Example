@@ -20,7 +20,8 @@
         <activity
             android:name=".progressbar.MyProgressBarActivity"
             android:label="@string/title_activity_my_progress_bar"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".texttimer.MyTextTimerActivity"></activity>
     </application>
 
 </manifest>

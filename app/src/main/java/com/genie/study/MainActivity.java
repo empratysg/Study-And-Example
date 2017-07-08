@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.genie.study.progressbar.MyProgressBarActivity;
+import com.genie.study.texttimer.MyTextTimerActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,5 +18,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void openMyProgressBar(View view) {
         startActivity(new Intent(this, MyProgressBarActivity.class));
+    }
+
+    public void openMyTextClock(View view) {
+        startActivity(new Intent(this, MyTextTimerActivity.class));
     }
 }
