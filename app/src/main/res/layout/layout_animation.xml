@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_dimen"
+        android:scrollbars="none">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_dimen"
+            android:background="#ff0000"
+            android:ellipsize="none"
+            android:fitsSystemWindows="true"
+            android:singleLine="true"
+            android:maxLines="1"/>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/button_dimen"
+        android:layout_height="@dimen/button_dimen"
+        android:layout_gravity="end"
+        android:translationX="@dimen/button_dimen"
+        android:text="X" />
+</merge>

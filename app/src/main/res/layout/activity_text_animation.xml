@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.genie.study.textanimation.TextAnimationActivity">
+
+    <TextView
+        android:id="@+id/timeCalculated"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_dimen"
+        android:background="@android:color/holo_blue_bright"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        android:textColor="#f00"/>
+
+    <com.genie.study.textanimation.AnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/idddd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="balsbladkjadkjas" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="balsbladkjadkjas" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="balsbladkjadkjas" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="balsbladkjadkjas" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="balsbladkjadkjas" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="balsbladkjadkjas" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="balsbladkjadkjas" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="balsbladkjadkjas" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="balsbladkjadkjas" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="balsbladkjadkjas" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="balsbladkjadkjas" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="balsbladkjadkjas" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="balsbladkjadkjas" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="balsbladkjadkjas" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

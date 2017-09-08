@@ -15,4 +15,9 @@
         android:layout_height="wrap_content"
         android:text="@string/my_text_clock"
         android:onClick="openMyTextClock"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_text_animation"
+        android:onClick="openMyTextAnimation"/>
 </LinearLayout>

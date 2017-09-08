@@ -5,4 +5,5 @@
     <string name="my_text_clock">my text clock</string>
     <string name="change_fragment">change fragment</string>
     <string name="input_for_timer_hhmmss">input for timer (hhmmss)</string>
+    <string name="my_text_animation">my text animation</string>
 </resources>
