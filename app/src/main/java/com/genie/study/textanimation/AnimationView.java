@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.genie.study.R;
 
@@ -20,8 +21,8 @@ import com.genie.study.R;
  */
 
 public class AnimationView extends FrameLayout implements Handler.Callback, Runnable {
-    private static final int DELAY_PER_TICK = 17;
-    private static final float RATIO_DISTANCE_PER_MILI = 3;
+    private static final int DELAY_PER_TICK = 1;
+    private static final float RATIO_DISTANCE_PER_MILI = 2;
     private TextView textView;
     private View view;
 
@@ -58,7 +59,14 @@ public class AnimationView extends FrameLayout implements Handler.Callback, Runn
 
         textView.setMinWidth(screenWid);
         textView.setTranslationX(baseTextViewTranslateX);
+        textView.setPadding(screenWid, 0, (int) baseViewTranslateX, 0);
         widTextView = screenWid;
+        view.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "blablabla", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     private int getScreenWid() {
@@ -87,7 +95,6 @@ public class AnimationView extends FrameLayout implements Handler.Callback, Runn
             textView.setWidth(widTextView);
         }
         totalTimeAnmation = (long) ((widTextView + screenWid + baseViewTranslateX) * RATIO_DISTANCE_PER_MILI);
-        Log.e("TAGG", widTextView + " - " + totalTimeAnmation);
     }
 
     @Override
@@ -131,11 +138,17 @@ public class AnimationView extends FrameLayout implements Handler.Callback, Runn
             float timePast = (SystemClock.elapsedRealtime() - timeBase);
             float distance = timePast / RATIO_DISTANCE_PER_MILI;
 
-            viewTranslateX = baseViewTranslateX - distance;
             textViewTranslateX = baseTextViewTranslateX - distance;
 
-            if (viewTranslateX < 0)
-                viewTranslateX = 0;
+            if (textViewTranslateX + widTextView <= baseTextViewTranslateX - baseViewTranslateX) {
+                viewTranslateX = textViewTranslateX + widTextView - baseTextViewTranslateX + baseViewTranslateX;
+            } else {
+                viewTranslateX = baseViewTranslateX - distance;
+                if (viewTranslateX < 0)
+                    viewTranslateX = 0;
+            }
+            Log.e("TAGG", " - " + viewTranslateX);
+
             if (textViewTranslateX < -widTextView) {
                 textViewTranslateX = -widTextView;
                 running = false;

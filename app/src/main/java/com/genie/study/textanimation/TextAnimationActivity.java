@@ -27,7 +27,7 @@ public class TextAnimationActivity extends AppCompatActivity implements Animatio
 
         animationView.setOnTickListener(this);
 
-        animationView.setText("This is a text very very long, 1234567890 0987654321 --------- =========This is a text very very long, 1234567890 0987654321 --------- =========");
+        animationView.setText("This is a text very very long, 1234567890 0987654321 --------- =========");
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
